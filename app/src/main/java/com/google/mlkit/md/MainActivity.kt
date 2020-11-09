@@ -18,15 +18,24 @@ package com.google.mlkit.md
 
 import android.animation.AnimatorInflater
 import android.animation.AnimatorSet
+import android.app.PendingIntent
 import android.content.Intent
+import android.graphics.Color
 import android.hardware.Camera
 import android.os.Bundle
 import android.util.Log
+import android.view.Gravity
 import android.view.View
 import android.view.View.OnClickListener
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.NotificationCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import com.android.volley.AuthFailureError
+import com.android.volley.Response
+import com.android.volley.toolbox.JsonObjectRequest
+import com.android.volley.toolbox.Volley
 import com.google.android.material.chip.Chip
 import com.google.common.base.Objects
 import com.google.mlkit.md.barcodedetection.BarcodeField
@@ -38,6 +47,8 @@ import com.google.mlkit.md.camera.GraphicOverlay
 import com.google.mlkit.md.camera.WorkflowModel
 import com.google.mlkit.md.camera.WorkflowModel.WorkflowState
 import com.google.mlkit.md.settings.SettingsActivity
+import org.json.JSONException
+import org.json.JSONObject
 import java.io.IOException
 import java.util.*
 
@@ -57,6 +68,9 @@ class MainActivity : AppCompatActivity(), OnClickListener {
     private val dBurl = "jdbc:mysql://192.168.0.192:3306/myDB"
     private val dBuser = "hitesh"
     private val dBpass = "1234"
+    private val debug = true
+    private val serverUrl = "TODO"
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -211,6 +225,75 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             }
         })
     }
+
+
+
+    fun sendServerUpdate(   data: String ) {
+
+        val requestQueue = Volley.newRequestQueue(this)
+        var jsonParams: JSONObject? = null
+        try {
+
+            jsonParams = JSONObject()
+            jsonParams.put("data", data)
+        } catch (e: JSONException) {
+            e.printStackTrace()
+            Alert("A JSONException2 error occured. Please try again later.")
+        }
+        sendToLog("Params:", jsonParams.toString())
+        val jsonObjReq: JsonObjectRequest = object : JsonObjectRequest( Method.POST ,
+                 serverUrl, jsonParams,
+                Response.Listener { response ->
+                    sendToLog("response:", response.toString())
+                    var jObject: JSONObject? = null
+                    try {
+                        jObject = JSONObject(response.toString())
+                        sendToLog("server response:", jObject.toString())
+                        val data = jObject.getJSONObject("data")
+
+                    } catch (e: JSONException) {
+                        e.printStackTrace()
+                        Alert("A JSONException1 error occured. Please try again later.")
+                    }
+                }, Response.ErrorListener { error -> // sendToLog("VolleyError:", error.getMessage() );
+            val networkResponse = error.networkResponse
+            if (networkResponse?.data != null) {
+                val jsonError = String(networkResponse.data)
+                // Print Error!
+                sendToLog("VolleyError:", jsonError)
+            }
+
+        }) {
+            /**
+             * Passing some request headers
+             */
+            @Throws(AuthFailureError::class)
+            override fun getHeaders(): Map<String, String> {
+                val headers = HashMap<String, String>()
+             //   headers["Content-Type"] = "application/vnd.api+json"
+              //  headers["Accept"] = "application/vnd.api+json"
+                return headers
+            }
+        }
+
+        // Adding request to request queue
+        requestQueue.add(jsonObjReq)
+    }
+
+
+    private fun Alert(text: String) {
+        val toast = Toast.makeText(this,
+                text,
+                Toast.LENGTH_LONG)
+        toast.setGravity(Gravity.RELATIVE_LAYOUT_DIRECTION, 0, 200)
+        toast.show()
+    }
+
+
+    fun sendToLog(title: String, text: String?) {
+        if (debug) Log.d("$title:", text)
+    }
+
 
     companion object {
         private const val TAG = "LiveBarcodeActivity"
