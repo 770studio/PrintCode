@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
     private val dBuser = "hitesh"
     private val dBpass = "1234"
     private val debug = true
-    private val serverUrl = "TODO"
+    private val serverUrl = "https://770studio.ru/demo/barcode_insert.php"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -221,6 +221,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             if (barcode != null) {
                 val barcodeFieldList = ArrayList<BarcodeField>()
                 barcodeFieldList.add(BarcodeField("Raw Value", barcode.rawValue ?: ""))
+                barcode.rawValue?.let { this.sendServerUpdate(it) }
                 BarcodeResultFragment.show(supportFragmentManager, barcodeFieldList)
             }
         })

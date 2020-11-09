@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\projects\\Mobile\\mlkit\\android\\material-showcase\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
+            "outputFile": "F:\\projects\\Mobile\\BarcodeScanner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Илья\\.gradle\\caches\\transforms-2\\files-2.1\\cb95b9232e47ee9c11a90d32e3ee4397\\material-1.2.0\\res\\values-small-v4\\values-small-v4.xml",

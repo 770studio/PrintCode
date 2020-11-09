@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\projects\\Mobile\\mlkit\\android\\material-showcase\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
+            "outputFile": "F:\\projects\\Mobile\\BarcodeScanner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Илья\\.gradle\\caches\\transforms-2\\files-2.1\\16a529e7f87b718bf90821d88abfa213\\preference-1.1.1\\res\\values-ko\\values-ko.xml",

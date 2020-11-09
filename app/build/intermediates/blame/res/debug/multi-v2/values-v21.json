@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\projects\\Mobile\\mlkit\\android\\material-showcase\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "F:\\projects\\Mobile\\BarcodeScanner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Илья\\.gradle\\caches\\transforms-2\\files-2.1\\683ee5f3e15ff63986a8deb34407abb0\\core-1.3.1\\res\\values-v21\\values-v21.xml",
@@ -20,25 +20,6 @@
                         "endLines": "2,13,14,15,337,338,339,340,385,390",
                         "endColumns": "117,63,66,63,115,125,125,127,12,12",
                         "endOffsets": "168,1079,1146,1210,25096,25222,25348,25476,28609,28961"
-                    }
-                },
-                {
-                    "source": "F:\\projects\\Mobile\\mlkit\\android\\material-showcase\\app\\src\\main\\res\\values-v21\\styles.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "2",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "10",
-                        "endOffsets": "258"
-                    },
-                    "to": {
-                        "startLines": "17",
-                        "startColumns": "4",
-                        "startOffsets": "1280",
-                        "endLines": "20",
-                        "endColumns": "10",
-                        "endOffsets": "1480"
                     }
                 },
                 {
@@ -96,6 +77,25 @@
                         "endLines": "16,333,336",
                         "endColumns": "64,12,12",
                         "endOffsets": "1275,24824,24980"
+                    }
+                },
+                {
+                    "source": "F:\\projects\\Mobile\\BarcodeScanner\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "2",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "10",
+                        "endOffsets": "258"
+                    },
+                    "to": {
+                        "startLines": "17",
+                        "startColumns": "4",
+                        "startOffsets": "1280",
+                        "endLines": "20",
+                        "endColumns": "10",
+                        "endOffsets": "1480"
                     }
                 }
             ]

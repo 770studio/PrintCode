@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\projects\\Mobile\\mlkit\\android\\material-showcase\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr\\values-fr.xml",
+            "outputFile": "F:\\projects\\Mobile\\BarcodeScanner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr\\values-fr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Илья\\.gradle\\caches\\transforms-2\\files-2.1\\7db01a125f3300b954e443a7b7e036ef\\jetified-play-services-base-17.0.0\\res\\values-fr\\values.xml",
