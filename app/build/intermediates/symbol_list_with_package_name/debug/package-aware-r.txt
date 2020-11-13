@@ -2135,6 +2135,7 @@ id photo_image
 id photo_library_button
 id photo_mask
 id pin
+id printButton
 id product_image
 id product_recycler_view
 id product_search_button
@@ -2408,6 +2409,7 @@ layout preference_widget_seekbar
 layout preference_widget_seekbar_material
 layout preference_widget_switch
 layout preference_widget_switch_compat
+layout print_button
 layout product_bottom_sheet
 layout product_item
 layout products_preview_card

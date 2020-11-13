@@ -71,174 +71,173 @@
 36-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:33:7-39
 37        android:supportsRtl="true"
 37-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:34:7-33
-38        android:testOnly="true"
-39        android:theme="@style/AppTheme" >
-39-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:35:7-38
-40        <meta-data
-40-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:38:5-40:64
-41            android:name="com.google.android.gms.version"
-41-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:39:9-54
-42            android:value="@integer/google_play_services_version" />
-42-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:40:9-62
-43
-44        <activity
-44-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:42:5-50:16
-45            android:name="com.google.mlkit.md.MainActivity"
-45-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:43:9-56
-46            android:exported="true"
-46-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:44:9-32
-47            android:screenOrientation="portrait" >
-47-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:45:9-45
-48            <intent-filter>
-48-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:46:7-49:23
-49                <action android:name="android.intent.action.MAIN" />
-49-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:47:9-60
-49-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:47:17-58
-50
-51                <category android:name="android.intent.category.LAUNCHER" />
-51-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:48:9-68
-51-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:48:19-66
-52            </intent-filter>
-53        </activity>
-54        <activity
-54-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:52:5-56:16
-55            android:name="com.google.mlkit.md.LiveObjectDetectionActivity"
-55-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:53:9-71
-56            android:exported="false"
-56-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:54:9-33
-57            android:screenOrientation="portrait" >
-57-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:55:9-45
-58        </activity>
-59        <activity
-59-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:58:5-62:16
-60            android:name="com.google.mlkit.md.LiveBarcodeScanningActivity"
-60-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:59:9-71
-61            android:exported="false"
-61-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:60:9-33
-62            android:screenOrientation="portrait" >
-62-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:61:9-45
-63        </activity>
-64        <activity
-64-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:64:5-68:16
-65            android:name="com.google.mlkit.md.StaticObjectDetectionActivity"
-65-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:65:9-73
-66            android:exported="false"
-66-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:66:9-33
-67            android:screenOrientation="portrait" >
-67-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:67:9-45
-68        </activity>
-69        <activity
-69-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:70:5-74:16
-70            android:name="com.google.mlkit.md.CustomModelObjectDetectionActivity"
-70-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:71:9-78
-71            android:exported="false"
-71-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:72:9-33
-72            android:screenOrientation="portrait" >
-72-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:73:9-45
-73        </activity>
-74        <activity
-74-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:76:5-81:16
-75            android:name="com.google.mlkit.md.settings.SettingsActivity"
-75-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:77:9-69
-76            android:exported="false"
-76-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:78:9-33
-77            android:label="@string/settings_title"
-77-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:79:9-47
-78            android:screenOrientation="portrait" >
-78-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:80:9-45
-79        </activity>
-80        <activity
-80-->[com.leon:lfilepickerlibrary:1.7.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\a930a0375409ccae9cc4c7106bc1457f\jetified-lfilepickerlibrary-1.7.0\AndroidManifest.xml:14:9-17:20
-81            android:name="com.leon.lfilepickerlibrary.ui.LFilePickerActivity"
-81-->[com.leon:lfilepickerlibrary:1.7.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\a930a0375409ccae9cc4c7106bc1457f\jetified-lfilepickerlibrary-1.7.0\AndroidManifest.xml:15:13-78
-82            android:theme="@style/LibraryAppTheme" >
-82-->[com.leon:lfilepickerlibrary:1.7.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\a930a0375409ccae9cc4c7106bc1457f\jetified-lfilepickerlibrary-1.7.0\AndroidManifest.xml:16:13-51
-83        </activity>
-84        <activity
-84-->[com.yancy.imageselector:imageselector:1.3.3] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\cbcf5baf9e6dce54cadcfdbdda02e85f\jetified-imageselector-1.3.3\AndroidManifest.xml:14:9-17:57
-85            android:name="com.yancy.imageselector.ImageSelectorActivity"
-85-->[com.yancy.imageselector:imageselector:1.3.3] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\cbcf5baf9e6dce54cadcfdbdda02e85f\jetified-imageselector-1.3.3\AndroidManifest.xml:15:13-73
-86            android:configChanges="orientation|screenSize"
-86-->[com.yancy.imageselector:imageselector:1.3.3] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\cbcf5baf9e6dce54cadcfdbdda02e85f\jetified-imageselector-1.3.3\AndroidManifest.xml:16:13-59
-87            android:theme="@style/ImageSelectorTheme" />
-87-->[com.yancy.imageselector:imageselector:1.3.3] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\cbcf5baf9e6dce54cadcfdbdda02e85f\jetified-imageselector-1.3.3\AndroidManifest.xml:17:13-54
-88
-89        <service
-89-->[com.google.mlkit:object-detection:16.2.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\3f0a272d5beff968aba34776d582f5ed\jetified-object-detection-16.2.1\AndroidManifest.xml:8:9-14:19
-90            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
-90-->[com.google.mlkit:object-detection:16.2.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\3f0a272d5beff968aba34776d582f5ed\jetified-object-detection-16.2.1\AndroidManifest.xml:9:13-91
-91            android:directBootAware="true"
-91-->[com.google.mlkit:common:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\361197f5ee1d4a4992b2363bf848f270\jetified-common-17.0.0\AndroidManifest.xml:17:13-43
-92            android:exported="false" >
-92-->[com.google.mlkit:object-detection:16.2.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\3f0a272d5beff968aba34776d582f5ed\jetified-object-detection-16.2.1\AndroidManifest.xml:10:13-37
-93            <meta-data
-93-->[com.google.mlkit:object-detection:16.2.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\3f0a272d5beff968aba34776d582f5ed\jetified-object-detection-16.2.1\AndroidManifest.xml:11:13-13:85
-94                android:name="com.google.firebase.components:com.google.mlkit.vision.objects.defaults.internal.DefaultObjectsRegistrar"
-94-->[com.google.mlkit:object-detection:16.2.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\3f0a272d5beff968aba34776d582f5ed\jetified-object-detection-16.2.1\AndroidManifest.xml:12:17-136
-95                android:value="com.google.firebase.components.ComponentRegistrar" />
-95-->[com.google.mlkit:object-detection:16.2.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\3f0a272d5beff968aba34776d582f5ed\jetified-object-detection-16.2.1\AndroidManifest.xml:13:17-82
-96            <meta-data
-96-->[com.google.mlkit:object-detection-custom:16.2.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\955ee25fdd4ccadd23deb043a131a66c\jetified-object-detection-custom-16.2.1\AndroidManifest.xml:11:13-13:85
-97                android:name="com.google.firebase.components:com.google.mlkit.vision.objects.custom.internal.CustomObjectsRegistrar"
-97-->[com.google.mlkit:object-detection-custom:16.2.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\955ee25fdd4ccadd23deb043a131a66c\jetified-object-detection-custom-16.2.1\AndroidManifest.xml:12:17-133
-98                android:value="com.google.firebase.components.ComponentRegistrar" />
-98-->[com.google.mlkit:object-detection-custom:16.2.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\955ee25fdd4ccadd23deb043a131a66c\jetified-object-detection-custom-16.2.1\AndroidManifest.xml:13:17-82
-99            <meta-data
-99-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.2] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\89f85caff875780eb72cb8a7acb5de45\jetified-play-services-mlkit-barcode-scanning-16.1.2\AndroidManifest.xml:12:13-14:85
-100                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
-100-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.2] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\89f85caff875780eb72cb8a7acb5de45\jetified-play-services-mlkit-barcode-scanning-16.1.2\AndroidManifest.xml:13:17-120
-101                android:value="com.google.firebase.components.ComponentRegistrar" />
-101-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.2] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\89f85caff875780eb72cb8a7acb5de45\jetified-play-services-mlkit-barcode-scanning-16.1.2\AndroidManifest.xml:14:17-82
-102            <meta-data
-102-->[com.google.mlkit:vision-internal-vkp:17.0.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\8ef9cd9182c1eeae1839d4e86afe32ef\jetified-vision-internal-vkp-17.0.1\AndroidManifest.xml:11:13-13:85
-103                android:name="com.google.firebase.components:com.google.mlkit.vision.vkp.VkpRegistrar"
-103-->[com.google.mlkit:vision-internal-vkp:17.0.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\8ef9cd9182c1eeae1839d4e86afe32ef\jetified-vision-internal-vkp-17.0.1\AndroidManifest.xml:12:17-103
-104                android:value="com.google.firebase.components.ComponentRegistrar" />
-104-->[com.google.mlkit:vision-internal-vkp:17.0.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\8ef9cd9182c1eeae1839d4e86afe32ef\jetified-vision-internal-vkp-17.0.1\AndroidManifest.xml:13:17-82
-105            <meta-data
-105-->[com.google.mlkit:vision-common:16.1.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\1595aff5b44934a9ed9c7706557d9a08\jetified-vision-common-16.1.0\AndroidManifest.xml:12:13-14:85
-106                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
-106-->[com.google.mlkit:vision-common:16.1.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\1595aff5b44934a9ed9c7706557d9a08\jetified-vision-common-16.1.0\AndroidManifest.xml:13:17-124
-107                android:value="com.google.firebase.components.ComponentRegistrar" />
-107-->[com.google.mlkit:vision-common:16.1.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\1595aff5b44934a9ed9c7706557d9a08\jetified-vision-common-16.1.0\AndroidManifest.xml:14:17-82
-108            <meta-data
-108-->[com.google.mlkit:common:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\361197f5ee1d4a4992b2363bf848f270\jetified-common-17.0.0\AndroidManifest.xml:20:13-22:85
-109                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
-109-->[com.google.mlkit:common:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\361197f5ee1d4a4992b2363bf848f270\jetified-common-17.0.0\AndroidManifest.xml:21:17-120
-110                android:value="com.google.firebase.components.ComponentRegistrar" />
-110-->[com.google.mlkit:common:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\361197f5ee1d4a4992b2363bf848f270\jetified-common-17.0.0\AndroidManifest.xml:22:17-82
-111        </service>
-112
-113        <provider
-113-->[com.google.mlkit:common:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\361197f5ee1d4a4992b2363bf848f270\jetified-common-17.0.0\AndroidManifest.xml:9:9-13:38
-114            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
-114-->[com.google.mlkit:common:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\361197f5ee1d4a4992b2363bf848f270\jetified-common-17.0.0\AndroidManifest.xml:10:13-78
-115            android:authorities="com.google.mlkit.md.mlkitinitprovider"
-115-->[com.google.mlkit:common:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\361197f5ee1d4a4992b2363bf848f270\jetified-common-17.0.0\AndroidManifest.xml:11:13-69
-116            android:exported="false"
-116-->[com.google.mlkit:common:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\361197f5ee1d4a4992b2363bf848f270\jetified-common-17.0.0\AndroidManifest.xml:12:13-37
-117            android:initOrder="99" />
-117-->[com.google.mlkit:common:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\361197f5ee1d4a4992b2363bf848f270\jetified-common-17.0.0\AndroidManifest.xml:13:13-35
-118
-119        <activity
-119-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\7db01a125f3300b954e443a7b7e036ef\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-120            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-120-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\7db01a125f3300b954e443a7b7e036ef\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-121            android:exported="false"
-121-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\7db01a125f3300b954e443a7b7e036ef\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-122            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-122-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\7db01a125f3300b954e443a7b7e036ef\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-123
-124        <provider
-124-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\5052ecb66e9a09e01fca8f9ebb3ab23a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
-125            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-125-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\5052ecb66e9a09e01fca8f9ebb3ab23a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
-126            android:authorities="com.google.mlkit.md.lifecycle-process"
-126-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\5052ecb66e9a09e01fca8f9ebb3ab23a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
-127            android:exported="false"
-127-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\5052ecb66e9a09e01fca8f9ebb3ab23a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
-128            android:multiprocess="true" />
-128-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\5052ecb66e9a09e01fca8f9ebb3ab23a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
-129    </application>
-130
-131</manifest>
+38        android:theme="@style/AppTheme" >
+38-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:35:7-38
+39        <meta-data
+39-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:38:5-40:64
+40            android:name="com.google.android.gms.version"
+40-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:39:9-54
+41            android:value="@integer/google_play_services_version" />
+41-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:40:9-62
+42
+43        <activity
+43-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:42:5-50:16
+44            android:name="com.google.mlkit.md.MainActivity"
+44-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:43:9-56
+45            android:exported="true"
+45-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:44:9-32
+46            android:screenOrientation="portrait" >
+46-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:45:9-45
+47            <intent-filter>
+47-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:46:7-49:23
+48                <action android:name="android.intent.action.MAIN" />
+48-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:47:9-60
+48-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:47:17-58
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:48:9-68
+50-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:48:19-66
+51            </intent-filter>
+52        </activity>
+53        <activity
+53-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:52:5-56:16
+54            android:name="com.google.mlkit.md.LiveObjectDetectionActivity"
+54-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:53:9-71
+55            android:exported="false"
+55-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:54:9-33
+56            android:screenOrientation="portrait" >
+56-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:55:9-45
+57        </activity>
+58        <activity
+58-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:58:5-62:16
+59            android:name="com.google.mlkit.md.LiveBarcodeScanningActivity"
+59-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:59:9-71
+60            android:exported="false"
+60-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:60:9-33
+61            android:screenOrientation="portrait" >
+61-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:61:9-45
+62        </activity>
+63        <activity
+63-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:64:5-68:16
+64            android:name="com.google.mlkit.md.StaticObjectDetectionActivity"
+64-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:65:9-73
+65            android:exported="false"
+65-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:66:9-33
+66            android:screenOrientation="portrait" >
+66-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:67:9-45
+67        </activity>
+68        <activity
+68-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:70:5-74:16
+69            android:name="com.google.mlkit.md.CustomModelObjectDetectionActivity"
+69-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:71:9-78
+70            android:exported="false"
+70-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:72:9-33
+71            android:screenOrientation="portrait" >
+71-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:73:9-45
+72        </activity>
+73        <activity
+73-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:76:5-81:16
+74            android:name="com.google.mlkit.md.settings.SettingsActivity"
+74-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:77:9-69
+75            android:exported="false"
+75-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:78:9-33
+76            android:label="@string/settings_title"
+76-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:79:9-47
+77            android:screenOrientation="portrait" >
+77-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:80:9-45
+78        </activity>
+79        <activity
+79-->[com.leon:lfilepickerlibrary:1.7.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\a930a0375409ccae9cc4c7106bc1457f\jetified-lfilepickerlibrary-1.7.0\AndroidManifest.xml:14:9-17:20
+80            android:name="com.leon.lfilepickerlibrary.ui.LFilePickerActivity"
+80-->[com.leon:lfilepickerlibrary:1.7.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\a930a0375409ccae9cc4c7106bc1457f\jetified-lfilepickerlibrary-1.7.0\AndroidManifest.xml:15:13-78
+81            android:theme="@style/LibraryAppTheme" >
+81-->[com.leon:lfilepickerlibrary:1.7.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\a930a0375409ccae9cc4c7106bc1457f\jetified-lfilepickerlibrary-1.7.0\AndroidManifest.xml:16:13-51
+82        </activity>
+83        <activity
+83-->[com.yancy.imageselector:imageselector:1.3.3] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\cbcf5baf9e6dce54cadcfdbdda02e85f\jetified-imageselector-1.3.3\AndroidManifest.xml:14:9-17:57
+84            android:name="com.yancy.imageselector.ImageSelectorActivity"
+84-->[com.yancy.imageselector:imageselector:1.3.3] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\cbcf5baf9e6dce54cadcfdbdda02e85f\jetified-imageselector-1.3.3\AndroidManifest.xml:15:13-73
+85            android:configChanges="orientation|screenSize"
+85-->[com.yancy.imageselector:imageselector:1.3.3] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\cbcf5baf9e6dce54cadcfdbdda02e85f\jetified-imageselector-1.3.3\AndroidManifest.xml:16:13-59
+86            android:theme="@style/ImageSelectorTheme" />
+86-->[com.yancy.imageselector:imageselector:1.3.3] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\cbcf5baf9e6dce54cadcfdbdda02e85f\jetified-imageselector-1.3.3\AndroidManifest.xml:17:13-54
+87
+88        <service
+88-->[com.google.mlkit:object-detection:16.2.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\3f0a272d5beff968aba34776d582f5ed\jetified-object-detection-16.2.1\AndroidManifest.xml:8:9-14:19
+89            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+89-->[com.google.mlkit:object-detection:16.2.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\3f0a272d5beff968aba34776d582f5ed\jetified-object-detection-16.2.1\AndroidManifest.xml:9:13-91
+90            android:directBootAware="true"
+90-->[com.google.mlkit:common:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\361197f5ee1d4a4992b2363bf848f270\jetified-common-17.0.0\AndroidManifest.xml:17:13-43
+91            android:exported="false" >
+91-->[com.google.mlkit:object-detection:16.2.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\3f0a272d5beff968aba34776d582f5ed\jetified-object-detection-16.2.1\AndroidManifest.xml:10:13-37
+92            <meta-data
+92-->[com.google.mlkit:object-detection:16.2.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\3f0a272d5beff968aba34776d582f5ed\jetified-object-detection-16.2.1\AndroidManifest.xml:11:13-13:85
+93                android:name="com.google.firebase.components:com.google.mlkit.vision.objects.defaults.internal.DefaultObjectsRegistrar"
+93-->[com.google.mlkit:object-detection:16.2.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\3f0a272d5beff968aba34776d582f5ed\jetified-object-detection-16.2.1\AndroidManifest.xml:12:17-136
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.mlkit:object-detection:16.2.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\3f0a272d5beff968aba34776d582f5ed\jetified-object-detection-16.2.1\AndroidManifest.xml:13:17-82
+95            <meta-data
+95-->[com.google.mlkit:object-detection-custom:16.2.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\955ee25fdd4ccadd23deb043a131a66c\jetified-object-detection-custom-16.2.1\AndroidManifest.xml:11:13-13:85
+96                android:name="com.google.firebase.components:com.google.mlkit.vision.objects.custom.internal.CustomObjectsRegistrar"
+96-->[com.google.mlkit:object-detection-custom:16.2.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\955ee25fdd4ccadd23deb043a131a66c\jetified-object-detection-custom-16.2.1\AndroidManifest.xml:12:17-133
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.mlkit:object-detection-custom:16.2.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\955ee25fdd4ccadd23deb043a131a66c\jetified-object-detection-custom-16.2.1\AndroidManifest.xml:13:17-82
+98            <meta-data
+98-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.2] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\89f85caff875780eb72cb8a7acb5de45\jetified-play-services-mlkit-barcode-scanning-16.1.2\AndroidManifest.xml:12:13-14:85
+99                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+99-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.2] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\89f85caff875780eb72cb8a7acb5de45\jetified-play-services-mlkit-barcode-scanning-16.1.2\AndroidManifest.xml:13:17-120
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.2] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\89f85caff875780eb72cb8a7acb5de45\jetified-play-services-mlkit-barcode-scanning-16.1.2\AndroidManifest.xml:14:17-82
+101            <meta-data
+101-->[com.google.mlkit:vision-internal-vkp:17.0.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\8ef9cd9182c1eeae1839d4e86afe32ef\jetified-vision-internal-vkp-17.0.1\AndroidManifest.xml:11:13-13:85
+102                android:name="com.google.firebase.components:com.google.mlkit.vision.vkp.VkpRegistrar"
+102-->[com.google.mlkit:vision-internal-vkp:17.0.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\8ef9cd9182c1eeae1839d4e86afe32ef\jetified-vision-internal-vkp-17.0.1\AndroidManifest.xml:12:17-103
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.mlkit:vision-internal-vkp:17.0.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\8ef9cd9182c1eeae1839d4e86afe32ef\jetified-vision-internal-vkp-17.0.1\AndroidManifest.xml:13:17-82
+104            <meta-data
+104-->[com.google.mlkit:vision-common:16.1.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\1595aff5b44934a9ed9c7706557d9a08\jetified-vision-common-16.1.0\AndroidManifest.xml:12:13-14:85
+105                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+105-->[com.google.mlkit:vision-common:16.1.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\1595aff5b44934a9ed9c7706557d9a08\jetified-vision-common-16.1.0\AndroidManifest.xml:13:17-124
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.mlkit:vision-common:16.1.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\1595aff5b44934a9ed9c7706557d9a08\jetified-vision-common-16.1.0\AndroidManifest.xml:14:17-82
+107            <meta-data
+107-->[com.google.mlkit:common:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\361197f5ee1d4a4992b2363bf848f270\jetified-common-17.0.0\AndroidManifest.xml:20:13-22:85
+108                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+108-->[com.google.mlkit:common:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\361197f5ee1d4a4992b2363bf848f270\jetified-common-17.0.0\AndroidManifest.xml:21:17-120
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.mlkit:common:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\361197f5ee1d4a4992b2363bf848f270\jetified-common-17.0.0\AndroidManifest.xml:22:17-82
+110        </service>
+111
+112        <provider
+112-->[com.google.mlkit:common:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\361197f5ee1d4a4992b2363bf848f270\jetified-common-17.0.0\AndroidManifest.xml:9:9-13:38
+113            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+113-->[com.google.mlkit:common:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\361197f5ee1d4a4992b2363bf848f270\jetified-common-17.0.0\AndroidManifest.xml:10:13-78
+114            android:authorities="com.google.mlkit.md.mlkitinitprovider"
+114-->[com.google.mlkit:common:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\361197f5ee1d4a4992b2363bf848f270\jetified-common-17.0.0\AndroidManifest.xml:11:13-69
+115            android:exported="false"
+115-->[com.google.mlkit:common:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\361197f5ee1d4a4992b2363bf848f270\jetified-common-17.0.0\AndroidManifest.xml:12:13-37
+116            android:initOrder="99" />
+116-->[com.google.mlkit:common:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\361197f5ee1d4a4992b2363bf848f270\jetified-common-17.0.0\AndroidManifest.xml:13:13-35
+117
+118        <activity
+118-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\7db01a125f3300b954e443a7b7e036ef\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+119            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+119-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\7db01a125f3300b954e443a7b7e036ef\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+120            android:exported="false"
+120-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\7db01a125f3300b954e443a7b7e036ef\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+121            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+121-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\7db01a125f3300b954e443a7b7e036ef\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+122
+123        <provider
+123-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\5052ecb66e9a09e01fca8f9ebb3ab23a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+124            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+124-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\5052ecb66e9a09e01fca8f9ebb3ab23a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+125            android:authorities="com.google.mlkit.md.lifecycle-process"
+125-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\5052ecb66e9a09e01fca8f9ebb3ab23a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+126            android:exported="false"
+126-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\5052ecb66e9a09e01fca8f9ebb3ab23a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+127            android:multiprocess="true" />
+127-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\5052ecb66e9a09e01fca8f9ebb3ab23a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+128    </application>
+129
+130</manifest>

@@ -33,6 +33,7 @@ import android.util.Log
 import android.view.Gravity
 import android.view.View
 import android.view.View.OnClickListener
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -87,6 +88,8 @@ class MainActivity : AppCompatActivity(), OnClickListener {
     private var thisCon: Context? = null
     private val ACTION_USB_PERMISSION = "com.PRINTSDKSample"
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -101,7 +104,14 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 
 
 
-        this.connectUSB()
+        //this.connectUSB()
+
+        setContentView(R.layout.print_button )
+
+        val printButton =  findViewById(R.id.printButton) as Button
+        printButton.setOnClickListener(OnClickListener {
+                this.doPrint ()
+         })
 
 
 
@@ -109,7 +119,9 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 
 
 
-         setContentView(R.layout.activity_live_barcode)
+        return
+
+
         preview = findViewById(R.id.camera_preview)
         graphicOverlay = findViewById<GraphicOverlay>(R.id.camera_preview_graphic_overlay).apply {
             setOnClickListener(this@MainActivity)
