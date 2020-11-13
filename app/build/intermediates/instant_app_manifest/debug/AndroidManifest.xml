@@ -11,13 +11,26 @@
         android:targetSdkVersion="29" />
 
     <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.usb.host" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
 
+    <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:name="androidx.multidex.MultiDexApplication"
-        android:allowBackup="false"
+        android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@drawable/logo_mlkit"
@@ -65,6 +78,14 @@
             android:label="@string/settings_title"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name="com.leon.lfilepickerlibrary.ui.LFilePickerActivity"
+            android:theme="@style/LibraryAppTheme" >
+        </activity>
+        <activity
+            android:name="com.yancy.imageselector.ImageSelectorActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/ImageSelectorTheme" />
 
         <service
             android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"

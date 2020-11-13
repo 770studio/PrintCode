@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\projects\\Mobile\\BarcodeScanner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
+            "outputFile": "C:\\Users\\770-2\\AndroidStudioProjects\\BarcodeScanner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Илья\\.gradle\\caches\\transforms-2\\files-2.1\\1d3606cffe99c8dba4903dcc43a39c9a\\appcompat-1.1.0\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\770-2\\.gradle\\caches\\transforms-2\\files-2.1\\1d3606cffe99c8dba4903dcc43a39c9a\\appcompat-1.1.0\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

@@ -35,6 +35,8 @@ android {
 
     sourceSets.main {
         assets.srcDirs = ['assets']
+        jniLibs.srcDirs = ['libs']
+
     }
 }
 
@@ -43,6 +45,16 @@ androidExtensions {
 }
 
 dependencies {
+
+    implementation fileTree(include: '*.jar', dir: 'libs')
+    implementation 'com.tbruyelle.rxpermissions:rxpermissions:0.9.3'
+    implementation 'com.leon:lfilepickerlibrary:1.7.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'com.yancy.imageselector:imageselector:1.3.3'
+
+
+
     implementation 'com.android.volley:volley:1.1.1'
     implementation 'com.google.android.material:material:1.2.0'
     implementation "android.arch.lifecycle:extensions:1.1.1"
@@ -65,4 +77,5 @@ dependencies {
     implementation 'com.google.mlkit:object-detection-custom:16.2.1'
 
     api 'com.google.guava:guava:27.1-jre'
+    implementation files('libs/Android_Print_SDK_ESC_V1.11.jar')
 }

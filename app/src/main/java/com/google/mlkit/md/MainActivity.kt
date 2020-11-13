@@ -16,20 +16,25 @@
 
 package com.google.mlkit.md
 
+import android.Manifest
 import android.animation.AnimatorInflater
 import android.animation.AnimatorSet
 import android.app.PendingIntent
+import android.content.BroadcastReceiver
+import android.content.Context
 import android.content.Intent
-import android.graphics.Color
+import android.content.IntentFilter
 import android.hardware.Camera
+import android.hardware.usb.UsbDevice
+import android.hardware.usb.UsbManager
 import android.os.Bundle
+import android.os.Parcelable
 import android.util.Log
 import android.view.Gravity
 import android.view.View
 import android.view.View.OnClickListener
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.NotificationCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.android.volley.AuthFailureError
@@ -47,10 +52,13 @@ import com.google.mlkit.md.camera.GraphicOverlay
 import com.google.mlkit.md.camera.WorkflowModel
 import com.google.mlkit.md.camera.WorkflowModel.WorkflowState
 import com.google.mlkit.md.settings.SettingsActivity
+import com.tbruyelle.rxpermissions.RxPermissions
 import org.json.JSONException
 import org.json.JSONObject
+import print.Print
 import java.io.IOException
 import java.util.*
+
 
 /** Demonstrates the barcode scanning workflow using camera preview.  */
 class MainActivity : AppCompatActivity(), OnClickListener {
@@ -71,11 +79,37 @@ class MainActivity : AppCompatActivity(), OnClickListener {
     private val debug = true
     private val serverUrl = "https://770studio.ru/demo/barcode_insert.php"
 
+    private var HPRTPrinter: Print? = Print()
+    private var mUsbManager: UsbManager? = null
+    private var device: UsbDevice? = null
+
+    private var mPermissionIntent: PendingIntent? = null
+    private var thisCon: Context? = null
+    private val ACTION_USB_PERMISSION = "com.PRINTSDKSample"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_live_barcode)
+        thisCon = this.applicationContext
+
+        mPermissionIntent = PendingIntent.getBroadcast(thisCon, 0, Intent(ACTION_USB_PERMISSION), 0)
+        val filter = IntentFilter(ACTION_USB_PERMISSION )
+        filter.addAction(UsbManager.ACTION_USB_DEVICE_DETACHED)
+        this.applicationContext.registerReceiver(mUsbReceiver, filter)
+
+
+
+
+
+        this.connectUSB()
+
+
+
+
+
+
+
+         setContentView(R.layout.activity_live_barcode)
         preview = findViewById(R.id.camera_preview)
         graphicOverlay = findViewById<GraphicOverlay>(R.id.camera_preview_graphic_overlay).apply {
             setOnClickListener(this@MainActivity)
@@ -221,8 +255,10 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             if (barcode != null) {
                 val barcodeFieldList = ArrayList<BarcodeField>()
                 barcodeFieldList.add(BarcodeField("Raw Value", barcode.rawValue ?: ""))
-                barcode.rawValue?.let { this.sendServerUpdate(it) }
                 BarcodeResultFragment.show(supportFragmentManager, barcodeFieldList)
+
+                barcode.rawValue?.let { this.sendServerUpdate(it) }
+                this.doPrint()
             }
         })
     }
@@ -294,6 +330,178 @@ class MainActivity : AppCompatActivity(), OnClickListener {
     fun sendToLog(title: String, text: String?) {
         if (debug) Log.d("$title:", text)
     }
+
+
+    private fun PrintByWifi() {
+
+
+        val rxPermissions = RxPermissions(this)
+        rxPermissions.request(Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION).subscribe { aBoolean ->
+            if (aBoolean) {
+               // setWifiDialog()
+
+
+                if (HPRTPrinter != null) {
+                    Print.PortClose()
+                }
+
+                val strIP: String = "192.168.43.37";
+                val strPort: String = "9100"
+
+
+                try {
+                    if (Print.PortOpen(this.applicationContext, "WiFi,$strIP,$strPort") != 0) {
+                        HPRTPrinter = null
+
+                        runOnUiThread {
+
+
+
+                            Print.PrintText("BC_EAN8:\n")
+
+                            val output = Print.PrintBarCode(Print.BC_EAN8,
+                                    "04210009")
+
+                            if(output == -1 ) {
+                                Alert("Print failure!")
+                            } else  {
+                                Alert(output.toString())
+                            }
+
+
+
+                        }
+                    } else {
+                        Alert("Can not connect on the port!")
+                    }
+                } catch (e: Exception) {
+                    runOnUiThread {
+                        Alert("Can not connect on the port, reason unknown!")
+                    }
+                }
+
+
+
+
+
+
+            } else {
+                Alert("No permissions to use WiFi!")
+            }
+        }
+
+
+
+
+
+
+    }
+
+    private fun doPrint () {
+
+        if( this.connectUSB() ) {
+
+
+            val output = Print.PrintBarCode(Print.BC_EAN8,
+                    "04210009")
+
+            if(output == -1 ) {
+                Alert("Print failure!")
+            } else  {
+                Alert(output.toString())
+            }
+
+
+        }
+
+
+
+    }
+    private fun connectUSB(): Boolean {
+        //USB not need call "iniPort"
+        mUsbManager = this.applicationContext.getSystemService(Context.USB_SERVICE) as UsbManager
+        val deviceList = mUsbManager!!.deviceList
+        val deviceIterator: Iterator<UsbDevice> = deviceList.values.iterator()
+        var HavePrinter = false
+        while (deviceIterator.hasNext()) {
+            device = deviceIterator.next()
+            val count = device!!.interfaceCount
+
+            for (i in 0 until count) {
+                val intf = device!!.getInterface(i)
+                if (intf.interfaceClass == 7) {
+
+                    Log.d("PRINT_TAG", "vendorID--" + device!!.vendorId + "ProductId--" + device!!.productId)
+
+                    //							if (device.getVendorId()==8401&&device.getProductId()==28680){
+//								Log.d("PRINT_TAG","123");
+                    HavePrinter = true
+                    mUsbManager!!.requestPermission(device, mPermissionIntent)
+
+
+
+
+
+                    //							}
+                }
+            }
+        }
+        if (!HavePrinter) Alert( "Please connect usb printer" )
+
+
+            return HavePrinter
+
+    }
+
+
+    private val mUsbReceiver: BroadcastReceiver = object : BroadcastReceiver() {
+        override fun onReceive(context: Context, intent: Intent) {
+            try {
+                val action = intent.action
+                if ( ACTION_USB_PERMISSION == action) {
+                    synchronized(this) {
+                        device = intent.getParcelableExtra<Parcelable>(UsbManager.EXTRA_DEVICE) as UsbDevice
+                        if (intent.getBooleanExtra(UsbManager.EXTRA_PERMISSION_GRANTED, false)) {
+                            if (Print.PortOpen(thisCon, device) != 0) {
+                                Log.d("PRINTER:", "Connect Error!" )
+                                return
+                            } else  Log.d("PRINTER:", "Connected!" )
+                        } else {
+                            return
+                        }
+                    }
+                }
+                if (UsbManager.ACTION_USB_DEVICE_DETACHED == action) {
+                    device = intent.getParcelableExtra<Parcelable>(UsbManager.EXTRA_DEVICE) as UsbDevice
+                    if (device != null) {
+                        val count = device!!.interfaceCount
+                        for (i in 0 until count) {
+                            val intf = device!!.getInterface(i)
+                            //Class ID 7代表打印机
+                            if (intf.interfaceClass == 7) {
+                                Print.PortClose()
+
+                                  Log.d("PRINTER:", "Please connect to printer!" )
+
+
+                            }
+                        }
+                    }
+                }
+            } catch (e: java.lang.Exception) {
+                Log.e("HPRTSDKSample", StringBuilder("Activity_Main --> mUsbReceiver ").append(e.message).toString())
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
 
 
     companion object {
