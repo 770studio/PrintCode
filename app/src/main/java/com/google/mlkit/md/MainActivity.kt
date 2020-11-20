@@ -17,14 +17,12 @@
 package com.google.mlkit.md
 
 import android.Manifest
-import android.animation.AnimatorInflater
 import android.animation.AnimatorSet
 import android.app.PendingIntent
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-import android.hardware.Camera
 import android.hardware.usb.UsbDevice
 import android.hardware.usb.UsbManager
 import android.os.Bundle
@@ -36,29 +34,20 @@ import android.view.View.OnClickListener
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
-import com.android.volley.AuthFailureError
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.google.android.material.chip.Chip
-import com.google.common.base.Objects
-import com.google.mlkit.md.barcodedetection.BarcodeField
 import com.google.mlkit.md.barcodedetection.BarcodeProcessor
-import com.google.mlkit.md.barcodedetection.BarcodeResultFragment
 import com.google.mlkit.md.camera.CameraSource
 import com.google.mlkit.md.camera.CameraSourcePreview
 import com.google.mlkit.md.camera.GraphicOverlay
 import com.google.mlkit.md.camera.WorkflowModel
 import com.google.mlkit.md.camera.WorkflowModel.WorkflowState
-import com.google.mlkit.md.settings.SettingsActivity
 import com.tbruyelle.rxpermissions.RxPermissions
 import org.json.JSONException
 import org.json.JSONObject
 import print.Print
-import java.io.IOException
-import java.util.*
 
 
 /** Demonstrates the barcode scanning workflow using camera preview.  */
@@ -74,11 +63,9 @@ class MainActivity : AppCompatActivity(), OnClickListener {
     private var workflowModel: WorkflowModel? = null
     private var currentWorkflowState: WorkflowState? = null
 
-    private val dBurl = "jdbc:mysql://192.168.0.192:3306/myDB"
-    private val dBuser = "hitesh"
-    private val dBpass = "1234"
+
     private val debug = true
-    private val serverUrl = "https://770studio.ru/demo/barcode_insert.php"
+    private val serverUrl = "https://770studio.ru/demo/barcode_demo.php"
 
     private var HPRTPrinter: Print? = Print()
     private var mUsbManager: UsbManager? = null
@@ -110,7 +97,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 
         val printButton =  findViewById(R.id.printButton) as Button
         printButton.setOnClickListener(OnClickListener {
-                this.doPrint ()
+                this.getCodeFromServerAndPrintIt ()
          })
 
 
@@ -119,32 +106,12 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 
 
 
-        return
 
 
-        preview = findViewById(R.id.camera_preview)
-        graphicOverlay = findViewById<GraphicOverlay>(R.id.camera_preview_graphic_overlay).apply {
-            setOnClickListener(this@MainActivity)
-            cameraSource = CameraSource(this)
-        }
 
-        promptChip = findViewById(R.id.bottom_prompt_chip)
-        promptChipAnimator =
-                (AnimatorInflater.loadAnimator(this, R.animator.bottom_prompt_chip_enter) as AnimatorSet).apply {
-                    setTarget(promptChip)
-                }
 
-/*
-        findViewById<View>(R.id.close_button).setOnClickListener(this)
-        flashButton = findViewById<View>(R.id.flash_button).apply {
-            setOnClickListener(this@MainActivity)
-        }
-        settingsButton = findViewById<View>(R.id.settings_button).apply {
-            setOnClickListener(this@MainActivity)
-        }
-*/
 
-        setUpWorkflowModel()
+
     }
 
     override fun onResume() {
@@ -157,148 +124,30 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         workflowModel?.setWorkflowState(WorkflowState.DETECTING)
     }
 
-    override fun onPostResume() {
-        super.onPostResume()
-        BarcodeResultFragment.dismiss(supportFragmentManager)
-    }
-
-    override fun onPause() {
-        super.onPause()
-        currentWorkflowState = WorkflowState.NOT_STARTED
-        stopCameraPreview()
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        cameraSource?.release()
-        cameraSource = null
-    }
 
     override fun onClick(view: View) {
-        when (view.id) {
-            R.id.close_button -> onBackPressed()
-            R.id.flash_button -> {
-                flashButton?.let {
-                    if (it.isSelected) {
-                        it.isSelected = false
-                        cameraSource?.updateFlashMode(Camera.Parameters.FLASH_MODE_OFF)
-                    } else {
-                        it.isSelected = true
-                        cameraSource!!.updateFlashMode(Camera.Parameters.FLASH_MODE_TORCH)
-                    }
-                }
-            }
-            R.id.settings_button -> {
-                settingsButton?.isEnabled = false
-                startActivity(Intent(this, SettingsActivity::class.java))
-            }
-        }
-    }
 
-    private fun startCameraPreview() {
-        val workflowModel = this.workflowModel ?: return
-        val cameraSource = this.cameraSource ?: return
-        if (!workflowModel.isCameraLive) {
-            try {
-                workflowModel.markCameraLive()
-                preview?.start(cameraSource)
-            } catch (e: IOException) {
-                Log.e(TAG, "Failed to start camera preview!", e)
-                cameraSource.release()
-                this.cameraSource = null
-            }
-        }
-    }
-
-    private fun stopCameraPreview() {
-        val workflowModel = this.workflowModel ?: return
-        if (workflowModel.isCameraLive) {
-            workflowModel.markCameraFrozen()
-            flashButton?.isSelected = false
-            preview?.stop()
-        }
-    }
-
-    private fun setUpWorkflowModel() {
-        workflowModel = ViewModelProviders.of(this).get(WorkflowModel::class.java)
-
-        // Observes the workflow state changes, if happens, update the overlay view indicators and
-        // camera preview state.
-        workflowModel!!.workflowState.observe(this, Observer { workflowState ->
-            if (workflowState == null || Objects.equal(currentWorkflowState, workflowState)) {
-                return@Observer
-            }
-
-            currentWorkflowState = workflowState
-            Log.d(TAG, "Current workflow state: ${currentWorkflowState!!.name}")
-
-            val wasPromptChipGone = promptChip?.visibility == View.GONE
-
-            when (workflowState) {
-                WorkflowState.DETECTING -> {
-                    promptChip?.visibility = View.VISIBLE
-                    promptChip?.setText(R.string.prompt_point_at_a_barcode)
-                    startCameraPreview()
-                }
-                WorkflowState.CONFIRMING -> {
-                    promptChip?.visibility = View.VISIBLE
-                    promptChip?.setText(R.string.prompt_move_camera_closer)
-                    startCameraPreview()
-                }
-                WorkflowState.SEARCHING -> {
-                    promptChip?.visibility = View.VISIBLE
-                    promptChip?.setText(R.string.prompt_searching)
-                    stopCameraPreview()
-                }
-                WorkflowState.DETECTED, WorkflowState.SEARCHED -> {
-                    promptChip?.visibility = View.GONE
-                    stopCameraPreview()
-                }
-                else -> promptChip?.visibility = View.GONE
-            }
-
-            val shouldPlayPromptChipEnteringAnimation = wasPromptChipGone && promptChip?.visibility == View.VISIBLE
-            promptChipAnimator?.let {
-                if (shouldPlayPromptChipEnteringAnimation && !it.isRunning) it.start()
-            }
-        })
-
-        workflowModel?.detectedBarcode?.observe(this, Observer { barcode ->
-            if (barcode != null) {
-                val barcodeFieldList = ArrayList<BarcodeField>()
-                barcodeFieldList.add(BarcodeField("Raw Value", barcode.rawValue ?: ""))
-                BarcodeResultFragment.show(supportFragmentManager, barcodeFieldList)
-
-                barcode.rawValue?.let { this.sendServerUpdate(it) }
-                this.doPrint()
-            }
-        })
     }
 
 
 
-    fun sendServerUpdate(   data: String ) {
-
+    fun getCodeFromServerAndPrintIt(  ) {
+        sendToLog("getCodeFromServerAndPrintIt:" , "run")
         val requestQueue = Volley.newRequestQueue(this)
-        var jsonParams: JSONObject? = null
-        try {
 
-            jsonParams = JSONObject()
-            jsonParams.put("data", data)
-        } catch (e: JSONException) {
-            e.printStackTrace()
-            Alert("A JSONException2 error occured. Please try again later.")
-        }
-        sendToLog("Params:", jsonParams.toString())
-        val jsonObjReq: JsonObjectRequest = object : JsonObjectRequest( Method.POST ,
-                 serverUrl, jsonParams,
+        val jsonObjReq: JsonObjectRequest = object : JsonObjectRequest( Method.GET ,
+                 serverUrl, null,
                 Response.Listener { response ->
                     sendToLog("response:", response.toString())
                     var jObject: JSONObject? = null
                     try {
                         jObject = JSONObject(response.toString())
-                        sendToLog("server response:", jObject.toString())
-                        val data = jObject.getJSONObject("data")
+                        val codeData = jObject.getString("value")
+                        val is_qr = jObject.getString("is_qr").toInt()
+
+                      //  sendToLog("data value:",  codeData   )
+                       // sendToLog("data is_qr:",  is_qr))
+                        this.doPrint ( codeData,  is_qr )
 
                     } catch (e: JSONException) {
                         e.printStackTrace()
@@ -313,16 +162,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             }
 
         }) {
-            /**
-             * Passing some request headers
-             */
-            @Throws(AuthFailureError::class)
-            override fun getHeaders(): Map<String, String> {
-                val headers = HashMap<String, String>()
-             //   headers["Content-Type"] = "application/vnd.api+json"
-              //  headers["Accept"] = "application/vnd.api+json"
-                return headers
-            }
+
         }
 
         // Adding request to request queue
@@ -409,13 +249,38 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 
     }
 
-    private fun doPrint () {
+    private fun doPrint (  codeData : String,  is_qr : Int) {
+
+        sendToLog("IS QR CODE:", is_qr.toString() )
 
         if( this.connectUSB() ) {
+            var output : Int = 0
+
+            try {
+                if(is_qr == 1) {
+
+                    output = Print.PrintQRCode(codeData ,6,48,0 )
 
 
-            val output = Print.PrintBarCode(Print.BC_EAN8,
-                    "04210009")
+
+                } else {
+
+                    output = Print.PrintBarCode( Print.BC_EAN8,
+                            codeData )
+
+
+                }
+
+
+            } catch (e: java.lang.Exception) {
+                Log.d("HPRTSDKSample", java.lang.StringBuilder("Activity_QRCode --> onClickPrint ").append(e.message).toString())
+
+                    Alert(e.message.toString() )
+            }
+
+
+
+
 
             if(output == -1 ) {
                 Alert("Print failure!")
@@ -516,7 +381,5 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 
 
 
-    companion object {
-        private const val TAG = "LiveBarcodeActivity"
-    }
+
 }

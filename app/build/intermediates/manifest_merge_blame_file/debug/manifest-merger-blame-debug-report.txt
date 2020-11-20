@@ -7,144 +7,144 @@
 7
 8    <uses-sdk
 9        android:minSdkVersion="19"
-9-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml
+9-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml
 10        android:targetSdkVersion="29" />
-10-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml
+10-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml
 11
 12    <uses-feature android:name="android.hardware.camera" />
-12-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:7:3-57
-12-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:7:17-55
+12-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:7:3-57
+12-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:7:17-55
 13    <uses-feature android:name="android.hardware.usb.host" />
-13-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:9:3-60
-13-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:9:17-57
+13-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:9:3-60
+13-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:9:17-57
 14
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:12:3-64
-15-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:12:20-62
+15-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:12:3-64
+15-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:12:20-62
 16    <uses-permission android:name="android.permission.CAMERA" />
-16-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:13:3-62
-16-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:13:20-60
+16-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:13:3-62
+16-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:13:20-60
 17
 18    <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
-18-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:17:3-79
-18-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:17:14-76
+18-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:17:3-79
+18-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:17:14-76
 19
 20    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-20-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:18:3-79
-20-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:18:20-76
+20-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:18:3-79
+20-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:18:20-76
 21    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-21-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:19:3-78
-21-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:19:20-75
+21-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:19:3-78
+21-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:19:20-75
 22    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-22-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:20:3-77
-22-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:20:20-74
+22-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:20:3-77
+22-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:20:20-74
 23    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-23-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:21:3-74
-23-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:21:20-71
+23-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:21:3-74
+23-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:21:20-71
 24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-24-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:22:3-77
-24-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:22:20-74
+24-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:22:3-77
+24-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:22:20-74
 25    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-25-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:23:3-74
-25-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:23:20-71
+25-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:23:3-74
+25-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:23:20-71
 26    <uses-permission android:name="android.permission.WAKE_LOCK" />
-26-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:24:3-66
-26-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:24:20-63
+26-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:24:3-66
+26-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:24:20-63
 27    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-27-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:26:3-79
-27-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:26:20-76
+27-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:26:3-79
+27-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:26:20-76
 28    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-28-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:27:3-77
-28-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:27:20-74
+28-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:27:3-77
+28-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:27:20-74
 29
 30    <application
-30-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:30:3-83:17
+30-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:30:3-83:17
 31        android:name="androidx.multidex.MultiDexApplication"
 32        android:allowBackup="true"
-32-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:31:7-33
+32-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:31:7-33
 33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 33-->[androidx.core:core:1.3.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\683ee5f3e15ff63986a8deb34407abb0\core-1.3.1\AndroidManifest.xml:24:18-86
 34        android:debuggable="true"
 35        android:icon="@drawable/logo_mlkit"
-35-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:32:7-42
+35-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:32:7-42
 36        android:label="@string/app_name"
-36-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:33:7-39
+36-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:33:7-39
 37        android:supportsRtl="true"
-37-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:34:7-33
+37-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:34:7-33
 38        android:theme="@style/AppTheme" >
-38-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:35:7-38
+38-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:35:7-38
 39        <meta-data
-39-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:38:5-40:64
+39-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:38:5-40:64
 40            android:name="com.google.android.gms.version"
-40-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:39:9-54
+40-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:39:9-54
 41            android:value="@integer/google_play_services_version" />
-41-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:40:9-62
+41-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:40:9-62
 42
 43        <activity
-43-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:42:5-50:16
+43-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:42:5-50:16
 44            android:name="com.google.mlkit.md.MainActivity"
-44-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:43:9-56
+44-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:43:9-56
 45            android:exported="true"
-45-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:44:9-32
+45-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:44:9-32
 46            android:screenOrientation="portrait" >
-46-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:45:9-45
+46-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:45:9-45
 47            <intent-filter>
-47-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:46:7-49:23
+47-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:46:7-49:23
 48                <action android:name="android.intent.action.MAIN" />
-48-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:47:9-60
-48-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:47:17-58
+48-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:47:9-60
+48-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:47:17-58
 49
 50                <category android:name="android.intent.category.LAUNCHER" />
-50-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:48:9-68
-50-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:48:19-66
+50-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:48:9-68
+50-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:48:19-66
 51            </intent-filter>
 52        </activity>
 53        <activity
-53-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:52:5-56:16
+53-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:52:5-56:16
 54            android:name="com.google.mlkit.md.LiveObjectDetectionActivity"
-54-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:53:9-71
+54-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:53:9-71
 55            android:exported="false"
-55-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:54:9-33
+55-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:54:9-33
 56            android:screenOrientation="portrait" >
-56-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:55:9-45
+56-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:55:9-45
 57        </activity>
 58        <activity
-58-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:58:5-62:16
+58-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:58:5-62:16
 59            android:name="com.google.mlkit.md.LiveBarcodeScanningActivity"
-59-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:59:9-71
+59-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:59:9-71
 60            android:exported="false"
-60-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:60:9-33
+60-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:60:9-33
 61            android:screenOrientation="portrait" >
-61-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:61:9-45
+61-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:61:9-45
 62        </activity>
 63        <activity
-63-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:64:5-68:16
+63-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:64:5-68:16
 64            android:name="com.google.mlkit.md.StaticObjectDetectionActivity"
-64-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:65:9-73
+64-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:65:9-73
 65            android:exported="false"
-65-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:66:9-33
+65-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:66:9-33
 66            android:screenOrientation="portrait" >
-66-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:67:9-45
+66-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:67:9-45
 67        </activity>
 68        <activity
-68-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:70:5-74:16
+68-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:70:5-74:16
 69            android:name="com.google.mlkit.md.CustomModelObjectDetectionActivity"
-69-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:71:9-78
+69-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:71:9-78
 70            android:exported="false"
-70-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:72:9-33
+70-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:72:9-33
 71            android:screenOrientation="portrait" >
-71-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:73:9-45
+71-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:73:9-45
 72        </activity>
 73        <activity
-73-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:76:5-81:16
+73-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:76:5-81:16
 74            android:name="com.google.mlkit.md.settings.SettingsActivity"
-74-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:77:9-69
+74-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:77:9-69
 75            android:exported="false"
-75-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:78:9-33
+75-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:78:9-33
 76            android:label="@string/settings_title"
-76-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:79:9-47
+76-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:79:9-47
 77            android:screenOrientation="portrait" >
-77-->C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:80:9-45
+77-->C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:80:9-45
 78        </activity>
 79        <activity
 79-->[com.leon:lfilepickerlibrary:1.7.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\a930a0375409ccae9cc4c7106bc1457f\jetified-lfilepickerlibrary-1.7.0\AndroidManifest.xml:14:9-17:20

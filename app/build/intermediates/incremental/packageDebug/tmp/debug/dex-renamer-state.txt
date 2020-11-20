@@ -1,10 +1,10 @@
-#Fri Nov 13 16:35:06 MSK 2020
+#Thu Nov 19 10:44:14 MSK 2020
 path.2=classes3.dex
 path.1=classes2.dex
 path.0=classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.2=C\:\\Users\\770-2\\AndroidStudioProjects\\BarcodeScanner\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes3.dex
-base.1=C\:\\Users\\770-2\\AndroidStudioProjects\\BarcodeScanner\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
-base.0=C\:\\Users\\770-2\\AndroidStudioProjects\\BarcodeScanner\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+base.2=C\:\\Users\\770-2\\AndroidStudioProjects\\PrintCode\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes3.dex
+base.1=C\:\\Users\\770-2\\AndroidStudioProjects\\PrintCode\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
+base.0=C\:\\Users\\770-2\\AndroidStudioProjects\\PrintCode\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex

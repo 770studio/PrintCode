@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\770-2\\AndroidStudioProjects\\BarcodeScanner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sl\\values-sl.xml",
+            "outputFile": "C:\\Users\\770-2\\AndroidStudioProjects\\PrintCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sl\\values-sl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\770-2\\.gradle\\caches\\transforms-2\\files-2.1\\683ee5f3e15ff63986a8deb34407abb0\\core-1.3.1\\res\\values-sl\\values-sl.xml",

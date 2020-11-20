@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:2:1-85:12
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:2:1-85:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\eaae21334e5f19ab63307e131cb27605\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.tbruyelle.rxpermissions:rxpermissions:0.9.3] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\3fb0c125db871fc7df086949221c005d\jetified-rxpermissions-0.9.3\AndroidManifest.xml:2:1-13:12
 MERGED from [com.leon:lfilepickerlibrary:1.7.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\a930a0375409ccae9cc4c7106bc1457f\jetified-lfilepickerlibrary-1.7.0\AndroidManifest.xml:2:1-20:12
@@ -63,85 +63,85 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\770-2\.gradle\
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\aeabb9574ae75461f9d96c1e250237ec\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\2d617b8ebb9c5d5c0f8919bc96dee7ca\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\b035fa6b5ad8ac7d126d738e216a98b3\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:2:1-85:12
 	package
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:4:5-34
-		INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:4:5-34
+		INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:2:1-85:12
-		INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:2:1-85:12
+		INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:2:1-85:12
-		INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:2:1-85:12
+		INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:2:11-69
 	android:installLocation
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:5:5-35
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:5:5-35
 uses-feature#android.hardware.camera
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:7:3-57
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:7:3-57
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:7:17-55
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:7:17-55
 uses-feature#android.hardware.usb.host
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:9:3-60
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:9:3-60
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:9:17-57
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:9:17-57
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:12:3-64
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:12:3-64
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:12:20-62
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:12:20-62
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:13:3-62
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:13:3-62
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:13:20-60
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:13:20-60
 meta-data#android.hardware.usb.action.USB_DEVICE_ATTACHED
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:17:3-79
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:17:3-79
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:17:14-76
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:17:14-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:18:3-79
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:18:3-79
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:18:20-76
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:18:20-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:19:3-78
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:19:3-78
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:19:20-75
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:19:20-75
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:20:3-77
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:20:3-77
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:20:20-74
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:20:20-74
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:21:3-74
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:21:3-74
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:21:20-71
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:21:20-71
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:22:3-77
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:22:3-77
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:22:20-74
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:22:20-74
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:23:3-74
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:23:3-74
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:23:20-71
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:23:20-71
 uses-permission#android.permission.WAKE_LOCK
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:24:3-66
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:24:3-66
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:24:20-63
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:24:20-63
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:26:3-79
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:26:3-79
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:26:20-76
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:26:20-76
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:27:3-77
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:27:3-77
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:27:20-74
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:27:20-74
 application
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:30:3-83:17
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:30:3-83:17
 MERGED from [com.tbruyelle.rxpermissions:rxpermissions:0.9.3] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\3fb0c125db871fc7df086949221c005d\jetified-rxpermissions-0.9.3\AndroidManifest.xml:11:5-20
 MERGED from [com.tbruyelle.rxpermissions:rxpermissions:0.9.3] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\3fb0c125db871fc7df086949221c005d\jetified-rxpermissions-0.9.3\AndroidManifest.xml:11:5-20
 MERGED from [com.leon:lfilepickerlibrary:1.7.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\a930a0375409ccae9cc4c7106bc1457f\jetified-lfilepickerlibrary-1.7.0\AndroidManifest.xml:11:5-18:19
@@ -193,89 +193,89 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\770-2\.gradle\
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.1] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\683ee5f3e15ff63986a8deb34407abb0\core-1.3.1\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:34:7-33
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:34:7-33
 	android:label
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:33:7-39
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:33:7-39
 	tools:ignore
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:36:7-46
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:36:7-46
 	android:icon
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:32:7-42
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:32:7-42
 	android:allowBackup
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:31:7-33
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:31:7-33
 	android:theme
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:35:7-38
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:35:7-38
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:38:5-40:64
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:38:5-40:64
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\3b94445c0a7d91d4a582f20296808b60\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\3b94445c0a7d91d4a582f20296808b60\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:40:9-62
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:40:9-62
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:39:9-54
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:39:9-54
 activity#com.google.mlkit.md.MainActivity
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:42:5-50:16
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:42:5-50:16
 	android:screenOrientation
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:45:9-45
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:45:9-45
 	android:exported
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:44:9-32
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:44:9-32
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:43:9-56
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:43:9-56
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:46:7-49:23
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:46:7-49:23
 action#android.intent.action.MAIN
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:47:9-60
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:47:9-60
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:47:17-58
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:47:17-58
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:48:9-68
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:48:9-68
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:48:19-66
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:48:19-66
 activity#com.google.mlkit.md.LiveObjectDetectionActivity
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:52:5-56:16
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:52:5-56:16
 	android:screenOrientation
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:55:9-45
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:55:9-45
 	android:exported
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:54:9-33
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:54:9-33
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:53:9-71
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:53:9-71
 activity#com.google.mlkit.md.LiveBarcodeScanningActivity
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:58:5-62:16
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:58:5-62:16
 	android:screenOrientation
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:61:9-45
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:61:9-45
 	android:exported
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:60:9-33
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:60:9-33
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:59:9-71
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:59:9-71
 activity#com.google.mlkit.md.StaticObjectDetectionActivity
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:64:5-68:16
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:64:5-68:16
 	android:screenOrientation
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:67:9-45
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:67:9-45
 	android:exported
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:66:9-33
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:66:9-33
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:65:9-73
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:65:9-73
 activity#com.google.mlkit.md.CustomModelObjectDetectionActivity
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:70:5-74:16
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:70:5-74:16
 	android:screenOrientation
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:73:9-45
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:73:9-45
 	android:exported
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:72:9-33
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:72:9-33
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:71:9-78
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:71:9-78
 activity#com.google.mlkit.md.settings.SettingsActivity
-ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:76:5-81:16
+ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:76:5-81:16
 	android:screenOrientation
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:80:9-45
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:80:9-45
 	android:label
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:79:9-47
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:79:9-47
 	android:exported
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:78:9-33
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:78:9-33
 	android:name
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml:77:9-69
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml:77:9-69
 uses-sdk
-INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\eaae21334e5f19ab63307e131cb27605\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\eaae21334e5f19ab63307e131cb27605\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.tbruyelle.rxpermissions:rxpermissions:0.9.3] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\3fb0c125db871fc7df086949221c005d\jetified-rxpermissions-0.9.3\AndroidManifest.xml:7:5-9:41
@@ -394,16 +394,16 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\770-2\.gradle\ca
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\2d617b8ebb9c5d5c0f8919bc96dee7ca\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\b035fa6b5ad8ac7d126d738e216a98b3\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\b035fa6b5ad8ac7d126d738e216a98b3\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\770-2\AndroidStudioProjects\BarcodeScanner\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\770-2\AndroidStudioProjects\PrintCode\app\src\main\AndroidManifest.xml
 activity#com.leon.lfilepickerlibrary.ui.LFilePickerActivity
 ADDED from [com.leon:lfilepickerlibrary:1.7.0] C:\Users\770-2\.gradle\caches\transforms-2\files-2.1\a930a0375409ccae9cc4c7106bc1457f\jetified-lfilepickerlibrary-1.7.0\AndroidManifest.xml:14:9-17:20
 	android:theme
