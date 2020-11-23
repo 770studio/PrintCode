@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "applicationId": "com.google.mlkit.md",
+  "applicationId": "com.example.pushnotification",
   "variantType": "BASE_APK",
   "elements": [
     {

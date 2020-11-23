@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\770-2\\AndroidStudioProjects\\PrintCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "F:\\projects\\Mobile\\PrintCode3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\770-2\\.gradle\\caches\\transforms-2\\files-2.1\\683ee5f3e15ff63986a8deb34407abb0\\core-1.3.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Илья\\.gradle\\caches\\transforms-2\\files-2.1\\c081af0d9a5d3a17e1f00b41f08d8b62\\core-1.3.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\770-2\\.gradle\\caches\\transforms-2\\files-2.1\\1d3606cffe99c8dba4903dcc43a39c9a\\appcompat-1.1.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Илья\\.gradle\\caches\\transforms-2\\files-2.1\\002e86b56c37fa1cd026e1921410ae58\\appcompat-1.1.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
