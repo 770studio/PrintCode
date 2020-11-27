@@ -141,7 +141,7 @@ class MainActivity : Activity(), OnClickListener {
                         jObject = JSONObject(response.toString())
                         val codeData = jObject.getString("value")
                         val is_qr = jObject.getString("is_qr").toInt()
-                        val codeType = jObject.getString("ptint_type_id").toInt()
+                        val codeType = jObject.getString("print_type_id").toInt()
 
                       //  sendToLog("data value:",  codeData   )
                        // sendToLog("data is_qr:",  is_qr))
